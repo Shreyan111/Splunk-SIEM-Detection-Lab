@@ -1,0 +1,6 @@
+ip,checked_at,verdict,vt_malicious,vt_suspicious,vt_harmless,vt_undetected,vt_total,vt_score,vt_status,abuse_score,abuse_country,abuse_isp,abuse_total_reports,abuse_last_reported,abuse_status
+185.220.101.45,2026-09-01 10:06:40,MALICIOUS,16,4,44,27,91,16/91,OK,100,DE,Network for Tor-Exit traffic.,159,2026-08-31T21:00:28+00:00,OK
+203.0.113.42,2026-09-01 10:06:44,CLEAN,0,0,54,37,91,0/91,OK,0,,,9,2026-08-06T10:51:14+00:00,OK
+45.33.32.156,2026-09-01 10:06:48,UNKNOWN,1,0,55,35,91,1/91,OK,12,US,Linode,6,2026-07-29T07:56:59+00:00,OK
+198.51.100.77,2026-09-01 10:06:53,CLEAN,0,0,54,37,91,0/91,OK,0,,,16,2026-08-31T14:56:37+00:00,OK
+91.108.4.100,2026-09-01 10:06:57,CLEAN,0,0,56,35,91,0/91,OK,0,NL,Telegram Messenger Network,0,,OK

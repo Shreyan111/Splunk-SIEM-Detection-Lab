@@ -1,0 +1,4 @@
+source="web_attack_logs.csv" host="web_device" index="soc_lab" sourcetype="csv" severity=HIGH OR severity="CRITICAL"
+| stats count by src_ip
+| where count > 5
+| sort -count

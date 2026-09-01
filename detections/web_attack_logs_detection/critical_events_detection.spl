@@ -1,0 +1,3 @@
+source="web_attack_logs.csv" host="web_device" index="soc_lab" sourcetype="csv" severity=CRITICAL
+| table timestamp src_ip attack_type uri
+| sort timestamp

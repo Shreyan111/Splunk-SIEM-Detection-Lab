@@ -1,0 +1,12 @@
+source="web_attack_logs.csv" host="web_device" index="soc_lab" sourcetype="csv"
+| eval attack_category = case(
+    attack_type="BruteForce" OR attack_type="BruteForce_Success", "Credential Access",
+    attack_type LIKE "XSS%", "Cross-Site Scripting",
+    attack_type LIKE "SQLi%", "SQL Injection",
+    attack_type="CMDInjection" OR attack_type="ReverseShell", "Execution / RCE",
+    attack_type="PathTraversal" OR attack_type="SensitiveFile", "Information Disclosure",
+    attack_type="AdminPanel", "Reconnaissance",
+    1=1, "Normal"
+)
+| stats count by attack_type, attack_category
+| sort - count
